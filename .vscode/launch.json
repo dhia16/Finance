@@ -2,21 +2,22 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-FinanceApplication<Finance_4ddd747f>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "finance.finance.FinanceApplication",
-            "projectName": "Finance_4ddd747f",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env"
-        },
-        {
-            "type": "java",
             "name": "Spring Boot-FinanceApplication<finance>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "mainClass": "finance.finance.FinanceApplication",
             "projectName": "finance",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=59171 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=finance"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-FinanceApplication<Finance_4ddd747f>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "finance.finance.FinanceApplication",
+            "projectName": "Finance_4ddd747f",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
